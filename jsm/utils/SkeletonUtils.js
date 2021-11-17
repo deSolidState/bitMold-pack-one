@@ -9,7 +9,7 @@ import {
   Vector2,
   Vector3,
   VectorKeyframeTrack,
-} from '../../../build/three.module.js';
+} from '../../build/three.module.js';
 
 function retarget(target, source, options = {}) {
   const pos = new Vector3(),
