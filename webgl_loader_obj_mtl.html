@@ -43,7 +43,7 @@
         {
           fileType: 'obj',
           meshName: 'extra-pizza', // Name of the main mesh to animate
-          position: { x: 10, y: -31, z: -20 }, // Where to put the unit in the scene
+          position: { x: 10, y: -28, z: -10 }, // Where to put the unit in the scene
           scale: 1, // Scaling of the unit. 1.0 means: use original size, 0.1 means "10 times smaller", etc.
         },
         {
@@ -107,7 +107,8 @@
           2000
         );
         camera.position.z = 100;
-        camera.lookAt(0, 1, 0);
+        camera.position.y = -10;
+        camera.lookAt(0, -20, 0);
 
         // clock
         clock = new THREE.Clock();
