@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>pack-one</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link type="text/css" rel="stylesheet" href="main-three.css" />
+  </head>
+
+  <body>
+    <script type="module">
+      import * as THREE from '../build/three.module.js';
+
+      import { OrbitControls } from './jsm/controls/OrbitControls.js';
+
+      import { DDSLoader } from './jsm/loaders/DDSLoader.js';
+      import { MTLLoader } from './jsm/loaders/MTLLoader.js';
+      import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+      import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+
+      let camera, scene, renderer, mixer, clock, controls;
+
+      let mouseX = 0,
+        mouseY = 0;
+
+      let windowHalfX = window.innerWidth / 2;
+      let windowHalfY = window.innerHeight / 2;
+
+      //////////////////////////////
+      // Information about our 3D models and units
+      //////////////////////////////
+      // Here we define instances of the models that we want to place in the scene, their position, and scale.
+      const MODELS = [
+        {
+          fileType: 'obj',
+          meshName: 'pack-one',
+          position: { x: -30, y: -35, z: -25 },
+          scale: 0.075,
+        },
+        {
+          fileType: 'obj',
+          meshName: 'extra-pizza', // Name of the main mesh to animate
+          position: { x: 10, y: -31, z: -20 }, // Where to put the unit in the scene
+          scale: 1, // Scaling of the unit. 1.0 means: use original size, 0.1 means "10 times smaller", etc.
+        },
+        {
+          fileType: 'obj',
+          meshName: 'sunflower-seed-low', // Name of the main mesh to animate
+          position: { x: 26, y: -25, z: -20 }, // Where to put the unit in the scene
+          scale: 5, // Scaling of the unit. 1.0 means: use original size, 0.1 means "10 times smaller", etc.
+        },
+        // {
+        //   fileType: 'obj',
+        //   meshName: 'skull-mesh', // Name of the main mesh to animate
+        //   position: { x: 26, y: -20, z: -10 }, // Where to put the unit in the scene
+        //   scale: 0.5, // Scaling of the unit. 1.0 means: use original size, 0.1 means "10 times smaller", etc.
+        //   rotation: { x: Math.PI / 2, y: 0, z: 0 },
+        // },
+        {
+          fileType: 'obj',
+          meshName: 'skull-mesh-spray', // Name of the main mesh to animate
+          position: { x: 12, y: -23, z: -15 }, // Where to put the unit in the scene
+          scale: 0.25,
+          rotation: { x: 1.5 * Math.PI, y: 0, z: 0 },
+        },
+        {
+          fileType: 'obj',
+          meshName: 'power-strip',
+          position: { x: -20, y: -21, z: -15 },
+          scale: 0.17,
+          rotation: { x: Math.PI / 2, y: Math.PI / 2, z: 0 },
+        },
+        {
+          fileType: 'glb',
+          meshName: 'pizza-cube',
+          position: { x: -9, y: -24.5, z: -5 },
+          scale: 3,
+          rotation: { x: Math.PI / 2, y: 0, z: 0 },
+        },
+        {
+          fileType: 'glb',
+          meshName: 'shrindoz',
+          position: { x: 3, y: 8, z: -10 },
+          scale: 0.5,
+          rotation: { x: Math.PI / 2, y: 0, z: 0 },
+          animName: 'KeyAction',
+        },
+      ];
+
+      const glb = {};
+
+      init();
+      loadModels();
+      animate();
+
+      function init() {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+
+        camera = new THREE.PerspectiveCamera(
+          45,
+          window.innerWidth / window.innerHeight,
+          1,
+          2000
+        );
+        camera.position.z = 100;
+        camera.lookAt(0, 1, 0);
+
+        // clock
+        clock = new THREE.Clock();
+
+        // scene
+        scene = new THREE.Scene();
+
+        const ambientLight = new THREE.AmbientLight(0xcccccc, 0.4);
+        scene.add(ambientLight);
+
+        const pointLight = new THREE.PointLight(0xffffff, 0.8);
+        camera.add(pointLight);
+        scene.add(camera);
+
+        // renderer
+        renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        // controls
+        controls = new OrbitControls(camera, renderer.domElement);
+        controls.listenToKeyEvents(window); // optional
+
+        //controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+
+        controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+        controls.dampingFactor = 0.05;
+
+        controls.screenSpacePanning = false;
+
+        controls.minDistance = 10;
+        controls.maxDistance = 500;
+
+        controls.maxPolarAngle = Math.PI;
+
+        container.appendChild(renderer.domElement);
+
+        document.addEventListener('mousemove', onDocumentMouseMove);
+        window.addEventListener('resize', onWindowResize);
+      }
+
+      const onProgress = function (xhr) {
+        if (xhr.lengthComputable) {
+          const percentComplete = (xhr.loaded / xhr.total) * 100;
+          console.log(Math.round(percentComplete, 2) + '% downloaded');
+        }
+      };
+
+      const onError = function () {};
+
+      function loadModels() {
+        const manager = new THREE.LoadingManager();
+        manager.addHandler(/\.dds$/i, new DDSLoader());
+        // comment in the following line and import TGALoader if your asset uses TGA textures
+        // manager.addHandler(/\.tga$/i, new TGALoader());
+
+        for (let i = 0; i < MODELS.length; i++) {
+          if (MODELS[i].fileType === 'glb') {
+            loadGltfModel(MODELS[i], function () {
+              console.log('done');
+            });
+          }
+
+          if (MODELS[i].fileType === 'obj') {
+            new MTLLoader(manager)
+              .setPath('obj/')
+              .load(`${MODELS[i].meshName}.obj.mtl`, function (materials) {
+                materials.preload();
+
+                new OBJLoader(manager)
+                  // .setMaterials(materials)
+                  .setPath('obj/')
+                  .load(
+                    `${MODELS[i].meshName}.obj`,
+                    function (object) {
+                      if (MODELS[i].position) {
+                        object.position.y = MODELS[i].position.y;
+                        object.position.z = MODELS[i].position.z;
+                        object.position.x = MODELS[i].position.x;
+                      }
+
+                      if (MODELS[i].scale) {
+                        object.scale.x = MODELS[i].scale;
+                        object.scale.y = MODELS[i].scale;
+                        object.scale.z = MODELS[i].scale;
+                      }
+
+                      if (MODELS[i].rotation) {
+                        object.rotation.x = MODELS[i].rotation.x;
+                        object.rotation.y = MODELS[i].rotation.y;
+                        object.rotation.z = MODELS[i].rotation.z;
+                      }
+
+                      object.castShadow = true;
+
+                      scene.add(object);
+                    },
+                    onProgress,
+                    onError
+                  );
+              });
+          }
+        }
+      }
+
+      function onWindowResize() {
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+
+      function onDocumentMouseMove(event) {
+        // mouseX = windowHalfX;
+        // mouseY = windowHalfY;
+        // mouseX = (event.clientX - windowHalfX) / 2;
+        // mouseY = (event.clientY - windowHalfY) / 2;
+      }
+
+      //
+
+      function animate() {
+        requestAnimationFrame(animate);
+        const mixers = [];
+
+        // Get the time elapsed since the last frame
+        const mixerUpdateDelta = clock.getDelta();
+        if (mixer) {
+          mixers.push(mixer);
+
+          // Update the animation frames
+          // mixer.update(mixerUpdateDelta);
+          for (let i = 0; i < mixers.length; ++i) {
+            mixers[i].update(mixerUpdateDelta);
+          }
+        }
+
+        render();
+      }
+
+      function render() {
+        // camera.position.x += (mouseX - camera.position.x) * 0.05;
+        // camera.position.y += (-mouseY - camera.position.y) * 0.05;
+
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+      }
+
+      function loadGltfModel(model, onLoaded) {
+        const loader = new GLTFLoader();
+        const modelName = 'obj/' + model.meshName + '.glb';
+
+        loader.load(
+          modelName,
+          function (gltf) {
+            // model.animations = gltf.animations;
+
+            // Enable Shadows
+
+            gltf.scene.traverse(function (object) {
+              if (object.isMesh) {
+                object.castShadow = true;
+              }
+            });
+
+            if (model.animName) {
+              console.log('in the animation section', gltf.animations[0]);
+              mixer = new THREE.AnimationMixer(gltf.scene);
+              mixer.clipAction(gltf.animations[0]).play();
+            }
+
+            if (model.scale) {
+              gltf.scene.scale.x = model.scale;
+              gltf.scene.scale.y = model.scale;
+              gltf.scene.scale.z = model.scale;
+            }
+
+            if (model.position) {
+              gltf.scene.position.y = model.position.y;
+              gltf.scene.position.z = model.position.z;
+              gltf.scene.position.x = model.position.x;
+            }
+            scene.add(gltf.scene);
+
+            console.log('Done loading model', model.meshName);
+
+            onLoaded();
+          },
+          // called while loading is progressing
+          function (xhr) {
+            console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+          },
+          // called when loading has errors
+          function (error) {
+            console.log('An error happened');
+          }
+        );
+      }
+    </script>
+  </body>
+</html>
