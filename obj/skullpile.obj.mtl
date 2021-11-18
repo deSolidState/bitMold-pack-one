@@ -1,0 +1,528 @@
+newmtl Skull
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(2)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(2)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(2)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(3)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(3)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(3)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(4)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(4)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(4)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(5)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(5)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(5)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(6)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(6)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(6)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(7)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(7)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(7)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(8)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(8)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(8)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(9)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(9)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(9)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(10)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(10)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(10)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(11)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(11)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(11)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(12)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(12)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(12)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(13)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(13)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(13)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(14)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(14)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(14)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(15)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(15)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(15)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Skull_Skulla_1_(16)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl JawBone_Skulla_1_(16)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
+newmtl Teeth_Skulla_1_(16)
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.309804 0.309804 0.309804
+Km 0
+# map_Kd "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-tex.jpg"
+# map_Bump "C:/Documents and Settings/Raif/Desktop/musk/Skulla/Skulla-Bum.jpg"
+
